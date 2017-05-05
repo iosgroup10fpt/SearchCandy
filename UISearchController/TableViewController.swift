@@ -65,18 +65,10 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
-        // 4
         tableView.tableHeaderView = searchController.searchBar
-        // 5
         searchController.searchBar.barTintColor = UIColor(red: 52.0/255.0, green: 200.0/255.0, blue: 114.0/255.0, alpha: 1.0)
         searchController.searchBar.tintColor = UIColor.white
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        tableView.rowHeight = 160
-    }
+           }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
